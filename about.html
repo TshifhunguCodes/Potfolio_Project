@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0f0f0f;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      color: #00ffe7;
+      padding: 20px;
+      box-shadow: 2px 0 10px #00ffe7;
+    }
+
+    .sidebar h2 {
+      color: #ff00c8;
+      text-shadow: 0 0 5px #ff00c8;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 20px 0;
+      text-decoration: none;
+      color: #00ffe7;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #ff00c8;
+      text-shadow: 0 0 5px #ff00c8;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      background: linear-gradient(145deg, #1a1a2e, #16213e, #0f3460);
+      color: #f0f0f0;
+    }
+
+    .content h1 {
+      color: #00ffe7;
+      text-shadow: 0 0 10px #00ffe7;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      font-size: 20px;
+      color: #f8f8f8;
+      text-shadow: 0 0 5px #00ffe7;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>MENU</h2>
+      <a href="index.html">🏠 Homepage</a>
+      <a href="about.html">👤 About Me</a>
+      <a href="projects.html">📁 Projects</a>
+      <a href="contact.html">📧 Contact</a>
+    </div>
+
+    <div class="content">
+      <h1>About Me</h1>
+      <p class="about-text">
+        I’m Ndou Fhatani, a third-year BSc Computer Science student at the University of Venda. I enjoy building web-based applications and designing interfaces that are both functional and futuristic. <br><br>
+        My passion lies in coding, problem-solving, and turning ideas into digital solutions. I believe in creating user experiences that not only work — but **look and feel amazing** too. From Java to HTML, and from databases to design — I’m building my path into the tech world with purpose and style.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

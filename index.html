@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Home</title>
+  <style>
+    body { 
+      margin: 0; 
+      font-family: 'Orbitron', sans-serif; 
+      background-color: #0f0f0f;
+    }
+
+    .container { 
+      display: flex; 
+      height: 100vh;
+    }
+
+    .sidebar { 
+      width: 220px; 
+      background-color: #111;
+      color: #00ffe7;
+      padding: 20px;
+      box-shadow: 2px 0 10px #00ffe7;
+    }
+
+    .sidebar h2 {
+      color: #ff00c8;
+      text-shadow: 0 0 5px #ff00c8;
+    }
+
+    .sidebar a { 
+      display: block; 
+      margin: 20px 0; 
+      text-decoration: none; 
+      color: #00ffe7; 
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #ff00c8;
+      text-shadow: 0 0 5px #ff00c8;
+    }
+
+    .content { 
+      flex: 1;
+      padding: 40px;
+      background: linear-gradient(145deg, #1a1a2e, #16213e, #0f3460);
+      color: #fff;
+    }
+
+    .Welcome_text {
+      font-weight: bold;
+      font-size: 48px;
+      text-align: center;
+      color: #00ffe7;
+      text-shadow: 0 0 10px #00ffe7;
+    }
+
+    .intro-section {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      gap: 40px;
+    }
+
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+     
+      object-fit: cover;
+      border: 3px solid #ff00c8;
+      box-shadow: 0 0 20px #ff00c8;
+    }
+
+    .description {
+      max-width: 600px;
+      font-size: 18px;
+      color: #00ffe7;
+    }
+
+    .My_Description {
+      font-size: 24px;
+      line-height: 1.6;
+      color: #f8f8f8;
+      text-shadow: 0 0 5px #00ffe7;
+    }
+  </style>
+  <!-- Optional: futuristic font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>MENU</h2>
+      <a href="index.html">🏠 Homepage</a>
+      <a href="about.html">👤 About Me</a>
+      <a href="projects.html">📁 Projects</a>
+      <a href="contact.html">📧 Contact</a>
+    </div>
+
+    <div class="content">
+      <h1 class="Welcome_text">Welcome to My Portfolio</h1>
+
+      <div class="intro-section">
+        <img src="hq720.avif" alt="My Photo" class="profile-pic">    
+        <div class="description">
+          <p class="My_Description">
+            Hello! I’m Ndou Fhatani, a passionate BSc Computer Science student at the University of Venda. I love coding, solving problems, and designing beautiful, user-friendly interfaces. Explore my portfolio to see what I’ve been working on!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
