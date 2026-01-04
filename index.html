@@ -3,116 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio - Home</title>
-  <style>
-    body { 
-      margin: 0; 
-      font-family: 'Orbitron', sans-serif; 
-      background-color: #0f0f0f;
-    }
-
-    .container { 
-      display: flex; 
-      height: 100vh;
-    }
-
-    .sidebar { 
-      width: 220px; 
-      background-color: #111;
-      color: #00ffe7;
-      padding: 20px;
-      box-shadow: 2px 0 10px #00ffe7;
-    }
-
-    .sidebar h2 {
-      color: #ff00c8;
-      text-shadow: 0 0 5px #ff00c8;
-    }
-
-    .sidebar a { 
-      display: block; 
-      margin: 20px 0; 
-      text-decoration: none; 
-      color: #00ffe7; 
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .sidebar a:hover {
-      color: #ff00c8;
-      text-shadow: 0 0 5px #ff00c8;
-    }
-
-    .content { 
-      flex: 1;
-      padding: 40px;
-      background: linear-gradient(145deg, #1a1a2e, #16213e, #0f3460);
-      color: #fff;
-    }
-
-    .Welcome_text {
-      font-weight: bold;
-      font-size: 48px;
-      text-align: center;
-      color: #00ffe7;
-      text-shadow: 0 0 10px #00ffe7;
-    }
-
-    .intro-section {
-      display: flex;
-      align-items: center;
-      margin-top: 40px;
-      gap: 40px;
-    }
-
-    .profile-pic {
-      width: 250px;
-      height: 250px;
-     
-      object-fit: cover;
-      border: 3px solid #ff00c8;
-      box-shadow: 0 0 20px #ff00c8;
-    }
-
-    .description {
-      max-width: 600px;
-      font-size: 18px;
-      color: #00ffe7;
-    }
-
-    .My_Description {
-      font-size: 24px;
-      line-height: 1.6;
-      color: #f8f8f8;
-      text-shadow: 0 0 5px #00ffe7;
-    }
-  </style>
-  <!-- Optional: futuristic font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta name="description" content="Fhatani Ndou - Computer Science Student at University of Venda, Data Engineer & Aspiring Software Engineer">
+  <title>Fhatani Ndou | Computer Science Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <h2>MENU</h2>
-      <a href="index.html">🏠 Homepage</a>
-      <a href="about.html">👤 About Me</a>
-      <a href="projects.html">📁 Projects</a>
-      <a href="contact.html">📧 Contact</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-text"> TM</div>
+        <div class="logo-name">Tshifhungu Matsheketsheke</div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="experience.html" class="nav-link"><i class="fas fa-trophy"></i> Experience</a></li>
+        <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
+  </nav>
 
-    <div class="content">
-      <h1 class="Welcome_text">Welcome to My Portfolio</h1>
-
-      <div class="intro-section">
-        <img src="hq720.avif" alt="My Photo" class="profile-pic">    
-        <div class="description">
-          <p class="My_Description">
-            Hello! I’m Ndou Fhatani, a passionate BSc Computer Science student at the University of Venda. I love coding, solving problems, and designing beautiful, user-friendly interfaces. Explore my portfolio to see what I’ve been working on!
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h3 class="hero-subtitle">Computer Science Student</h3>
+          <h1 class="hero-title">Tshifhungu Jonathan <span class="highlight">Matsheketsheke</span></h1>
+          <h2 class="hero-tagline">Data Engineer & Aspiring Software Engineer</h2>
+          <p class="hero-description">
+            Passionate BSc Computer Science student at the <span class="highlight">University of Venda</span> with expertise in full-stack development, data engineering, and building scalable solutions. I've developed websites, student grade book systems, secure authentication systems, and actively participate in hackathons.
           </p>
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn btn-primary">View My Projects</a>
+            <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+          </div>
+          <div class="hero-links">
+            <a href="https://github.com" target="_blank" class="social-link">
+              <i class="fab fa-github"></i> GitHub Repositories
+            </a>
+            <a href="experience.html" class="social-link">
+              <i class="fas fa-certificate"></i> Certifications
+            </a>
+            <a href="experience.html" class="social-link">
+              <i class="fas fa-code-branch"></i> Hackathons
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-image"></div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Skills Preview Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Expertise</h2>
+      <p class="section-subtitle">Technologies and skills I work with</p>
+      
+      <div class="skills-preview" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Data Engineering</h3>
+          <ul style="list-style: none; margin-top: 1rem;">
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Python & Pandas</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> SQL & Data Modeling</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Data Visualization</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Software Development</h3>
+          <ul style="list-style: none; margin-top: 1rem;">
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Full-Stack Web Development</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> JavaScript, React, Node.js</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> REST APIs & Authentication</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Practices</h3>
+          <ul style="list-style: none; margin-top: 1rem;">
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Git & GitHub</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Docker & Containerization</li>
+            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Agile Development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Preview -->
+  <section class="section" style="background-color: #f8fafc;">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A glimpse of my technical work</p>
+      
+      <div class="projects-preview" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--gray-color);"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Secure Authentication System</h3>
+            <p class="project-description">Full-stack web application with secure user authentication, JWT, and OAuth 2.0 integration.</p>
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>React</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="projects.html" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--gray-color);"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Student Grade Book System</h3>
+            <p class="project-description">Comprehensive system for tracking student grades, assignments, and academic performance.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>PostgreSQL</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="projects.html" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="projects.html" class="btn btn-primary">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <div class="logo-text" style="background: white; color: var(--primary-color);">FN</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="projects.html" class="footer-link">Projects</a>
+        <a href="experience.html" class="footer-link">Experience</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:fhatani@example.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="copyright">&copy; 2023 Fhatani Ndou. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
