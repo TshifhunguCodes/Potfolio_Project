@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Fhatani Ndou - Computer Science Student at University of Venda, Data Engineer & Aspiring Software Engineer">
-  <title>Fhatani Ndou | Computer Science Portfolio</title>
+  <meta name="description" content="Tshifhungu Matsheketsheke - Computer Science Student at University of Venda, Data Engineer & Aspiring Software Engineer">
+  <title>Tshifhungu Matsheketsheke | Computer Science Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
   <nav class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <div class="logo-text"> TM</div>
+        <div class="logo-text">TM</div>
         <div class="logo-name">Tshifhungu Matsheketsheke</div>
       </a>
       <ul class="nav-menu">
@@ -27,9 +28,14 @@
         <li><a href="experience.html" class="nav-link"><i class="fas fa-trophy"></i> Experience</a></li>
         <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -38,30 +44,97 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <h3 class="hero-subtitle">Computer Science Student</h3>
-          <h1 class="hero-title">Tshifhungu Jonathan <span class="highlight">Matsheketsheke</span></h1>
-          <h2 class="hero-tagline">Aspiring Data Engineer & Software Engineer</h2>
+          <div class="hero-badge">
+            <span><i class="fas fa-code"></i> Computer Science Student</span>
+          </div>
+          <h1 class="hero-title">Tshifhungu <span class="highlight">Jonathan</span> Matsheketsheke</h1>
+          <h2 class="hero-tagline">
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">|</span>
+          </h2>
           <p class="hero-description">
-            Passionate BSc Computer Science student at the <span class="highlight">University of Venda</span> with expertise in full-stack development, data engineering, and building scalable solutions. I've developed websites, student grade book systems, secure authentication systems, and actively participate in hackathons.
+            Passionate BSc Computer Science student at the <span class="highlight">University of Venda</span> with expertise in full-stack development, data engineering, and building scalable solutions. I develop practical applications and actively participate in hackathons.
           </p>
           <div class="hero-buttons">
-            <a href="projects.html" class="btn btn-primary">View My Projects</a>
-            <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+            <a href="projects.html" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
           </div>
           <div class="hero-links">
             <a href="https://github.com" target="_blank" class="social-link">
-              <i class="fab fa-github"></i> GitHub Repositories
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:tshifhungujnr825@gmai.com" class="social-link">
+              <i class="fas fa-envelope"></i>
             </a>
             <a href="experience.html" class="social-link">
-              <i class="fas fa-certificate"></i> Certifications
-            </a>
-            <a href="experience.html" class="social-link">
-              <i class="fas fa-code-branch"></i> Hackathons
+              <i class="fas fa-certificate"></i>
             </a>
           </div>
         </div>
         <div class="hero-image">
-          <div class="profile-image"></div>
+          <div class="profile-image-container">
+            <div class="profile-image-wrapper">
+              <div class="profile-image">
+                <!-- Add your profile image here -->
+                <!-- <img src="images/profile.jpg" alt="Tshifhungu Matsheketsheke"> -->
+                <div class="profile-placeholder">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="profile-overlay">
+                  <div class="profile-overlay-content">
+                    <h3>Tshifhungu Matsheketsheke</h3>
+                    <p>Computer Science Student</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-decorations">
+                <div class="decoration-circle circle-1"></div>
+                <div class="decoration-circle circle-2"></div>
+                <div class="decoration-circle circle-3"></div>
+              </div>
+            </div>
+            <div class="profile-tech-stack">
+              <div class="tech-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <span>SQL</span>
+              </div>
+              <div class="tech-item">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -70,34 +143,48 @@
   <!-- Skills Preview Section -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">Technical Expertise</h2>
-      <p class="section-subtitle">Technologies and skills I work with</p>
+      <div class="section-header">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">Technologies and skills I work with</p>
+      </div>
       
-      <div class="skills-preview" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+      <div class="skills-preview">
         <div class="skill-category">
-          <h3><i class="fas fa-database"></i> Data Engineering</h3>
-          <ul style="list-style: none; margin-top: 1rem;">
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Python & Pandas</li>
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> SQL & Data Modeling</li>
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Data Visualization</li>
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Data Engineering</h3>
+          <ul class="skill-list">
+            <li><i class="fas fa-check"></i> Python & Pandas</li>
+            <li><i class="fas fa-check"></i> SQL & Data Modeling</li>
+            <li><i class="fas fa-check"></i> Data Visualization</li>
+            <li><i class="fas fa-check"></i> ETL Processes</li>
           </ul>
         </div>
         
         <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Software Development</h3>
-          <ul style="list-style: none; margin-top: 1rem;">
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Full-Stack Web Development</li>
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> JAVASCRIPT,CSS,HTML</li>
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> REST APIs & Authentication</li>
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Software Development</h3>
+          <ul class="skill-list">
+            <li><i class="fas fa-check"></i> Full-Stack Web Development</li>
+            <li><i class="fas fa-check"></i> JavaScript, CSS, HTML</li>
+            <li><i class="fas fa-check"></i> REST APIs & Authentication</li>
+            <li><i class="fas fa-check"></i> Mobile App Development</li>
           </ul>
         </div>
         
         <div class="skill-category">
-          <h3><i class="fas fa-tools"></i> Tools & Practices</h3>
-          <ul style="list-style: none; margin-top: 1rem;">
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Git & GitHub</li>
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Software Engineering Methodologies</li>
-            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: var(--success-color); margin-right: 10px;"></i> Agile Development</li>
+          <div class="skill-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Tools & Practices</h3>
+          <ul class="skill-list">
+            <li><i class="fas fa-check"></i> Git & GitHub</li>
+            <li><i class="fas fa-check"></i> Agile Development</li>
+            <li><i class="fas fa-check"></i> Docker & CI/CD</li>
+            <li><i class="fas fa-check"></i> Cloud Platforms</li>
           </ul>
         </div>
       </div>
@@ -105,52 +192,80 @@
   </section>
 
   <!-- Featured Projects Preview -->
-  <section class="section" style="background-color: #f8fafc;">
+  <section class="section featured-projects">
     <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">A glimpse of my technical work</p>
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A glimpse of my technical work</p>
+      </div>
       
-      <div class="projects-preview" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+      <div class="projects-preview">
         <div class="project-card">
           <div class="project-image">
-            <i class="fas fa-shield-alt" style="font-size: 3rem; color: var(--gray-color);"></i>
+            <i class="fas fa-shield-alt"></i>
           </div>
           <div class="project-content">
             <h3 class="project-title">Secure Authentication System</h3>
-            <p class="project-description">Full-stack web application with secure user authentication,Passowrd Hashing bycrpt and OAuth 2.0 integration using python.</p>
+            <p class="project-description">Full-stack web application with secure user authentication, password hashing with bcrypt and OAuth 2.0 integration using Python.</p>
             <div class="project-tech">
-              <span>python</span>
+              <span>Python</span>
               <span>Psycopg</span>
               <span>Flask</span>
               <span>SQL</span>
             </div>
             <div class="project-links">
-              <a href="projects.html" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+              <a href="projects.html" class="project-link">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
+          </div>
+          <div class="project-badge">
+            <span>Latest</span>
           </div>
         </div>
         
         <div class="project-card">
           <div class="project-image">
-            <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--gray-color);"></i>
+            <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="project-content">
             <h3 class="project-title">Student Grade Book System</h3>
-            <p class="project-description">Comprehensive system for tracking student grades, assignments, and academic performance.</p>
+            <p class="project-description">Comprehensive system for tracking student grades, assignments, and academic performance with JavaFX and MySQL.</p>
             <div class="project-tech">
-              <span>JAVAFX</span>
+              <span>JavaFX</span>
               <span>JDBC</span>
-              <span>MYSQL</span>
+              <span>MySQL</span>
             </div>
             <div class="project-links">
-              <a href="projects.html" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+              <a href="projects.html" class="project-link">
+                View Details <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
+          </div>
+          <div class="project-badge">
+            <span>Featured</span>
           </div>
         </div>
       </div>
       
-      <div style="text-align: center; margin-top: 3rem;">
-        <a href="projects.html" class="btn btn-primary">View All Projects</a>
+      <div class="text-center">
+        <a href="projects.html" class="btn btn-outline">
+          View All Projects <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Let's Build Something Amazing Together</h2>
+        <p>Interested in collaborating or have a project in mind? I'm always open to discussing new opportunities.</p>
+        <a href="contact.html" class="btn btn-primary">
+          <span>Start a Conversation</span>
+          <i class="fas fa-comment"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -158,24 +273,66 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <div class="footer-logo">
-        <div class="logo-text" style="background: white; color: var(--primary-color);">TM</div>
+      <div class="footer-main">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <div class="logo-text">TM</div>
+            <div class="logo-name">Tshifhungu Matsheketsheke</div>
+          </div>
+          <p class="footer-description">
+            Computer Science student passionate about data engineering, software development, and creating impactful solutions.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <div class="link-columns">
+            <div class="link-column">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="projects.html" class="footer-link">Projects</a>
+            </div>
+            <div class="link-column">
+              <a href="experience.html" class="footer-link">Experience</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a href="https://github.com" target="_blank" class="footer-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> tshifhungujnr825@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> University of Venda</p>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="index.html" class="footer-link">Home</a>
-        <a href="about.html" class="footer-link">About</a>
-        <a href="projects.html" class="footer-link">Projects</a>
-        <a href="experience.html" class="footer-link">Experience</a>
-        <a href="contact.html" class="footer-link">Contact</a>
+      
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:tshifhungujnr825@gmai.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2025 Tshifhungu Matsheketsheke. All rights reserved.</p>
       </div>
-      <div class="footer-social">
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:tshifhungujnr825@gmai.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p class="copyright">&copy; 2025 Tshifhungu Matsheketsheke. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="js/script.js"></script>
 </body>

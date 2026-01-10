@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Experience & Certifications of Fhatani Ndou">
-  <title>Experience | Fhatani Ndou</title>
+  <meta name="description" content="Experience & Certifications of Tshifhungu Matsheketsheke">
+  <title>Experience | Tshifhungu Matsheketsheke</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -17,8 +18,8 @@
   <nav class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <div class="logo-text">FN</div>
-        <div class="logo-name">Fhatani Ndou</div>
+        <div class="logo-text">TM</div>
+        <div class="logo-name">Tshifhungu Matsheketsheke</div>
       </a>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
@@ -27,79 +28,161 @@
         <li><a href="experience.html" class="nav-link active"><i class="fas fa-trophy"></i> Experience</a></li>
         <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- Experience Section -->
+  <!-- Experience Hero -->
+  <section class="section hero-section">
+    <div class="container">
+      <div class="experience-hero">
+        <div class="experience-hero-content">
+          <h1 class="hero-title">Experience & <span class="highlight">Achievements</span></h1>
+          <p class="hero-description">My journey through hackathons, certifications, and continuous learning in technology.</p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="6">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="2">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="experience-hero-image">
+          <div class="awards-placeholder">
+            <i class="fas fa-trophy"></i>
+            <i class="fas fa-certificate"></i>
+            <i class="fas fa-medal"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hackathons Section -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">Experience & Hackathons</h2>
-      <p class="section-subtitle">My participation in competitive programming events and technical challenges</p>
+      <div class="section-header">
+        <h2 class="section-title">Hackathons & Competitions</h2>
+        <p class="section-subtitle">My participation in competitive programming events and technical challenges</p>
+      </div>
       
-      <div class="timeline">
-        <!-- Hackathon 1 -->
-        <div class="timeline-item">
-          <div class="timeline-date">2023</div>
-          <div class="timeline-content">
-            <h3>University Tech Innovation Hackathon</h3>
-            <p><strong>First Place Winner</strong></p>
-            <p>Led a team of 4 to develop an AI-powered study assistant for students with learning disabilities. Implemented natural language processing for content summarization and speech-to-text functionality.</p>
-            <div class="project-tech" style="margin-top: 1rem;">
-              <span>Python</span>
-              <span>TensorFlow</span>
-              <span>Flask</span>
-              <span>React</span>
+      <div class="hackathons-grid">
+        <div class="hackathon-card">
+          <div class="hackathon-header">
+            <span class="hackathon-badge first-place">First Place</span>
+            <span class="hackathon-year">2023</span>
+          </div>
+          <h3>University Tech Innovation Hackathon</h3>
+          <p class="hackathon-description">Led a team of 4 to develop an AI-powered study assistant for students with learning disabilities. Implemented natural language processing for content summarization and speech-to-text functionality.</p>
+          <div class="hackathon-tech">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>Flask</span>
+            <span>React</span>
+          </div>
+          <div class="hackathon-achievements">
+            <div class="achievement">
+              <i class="fas fa-users"></i>
+              <span>Team Leadership</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-brain"></i>
+              <span>AI Implementation</span>
             </div>
           </div>
         </div>
         
-        <!-- Hackathon 2 -->
-        <div class="timeline-item">
-          <div class="timeline-date">2023</div>
-          <div class="timeline-content">
-            <h3>National Data Science Competition</h3>
-            <p><strong>Finalist</strong></p>
-            <p>Developed a predictive model for student academic performance using machine learning algorithms. Achieved 92% accuracy in predicting at-risk students based on historical data.</p>
-            <div class="project-tech" style="margin-top: 1rem;">
-              <span>Python</span>
-              <span>Scikit-learn</span>
-              <span>Pandas</span>
-              <span>Matplotlib</span>
+        <div class="hackathon-card">
+          <div class="hackathon-header">
+            <span class="hackathon-badge finalist">Finalist</span>
+            <span class="hackathon-year">2023</span>
+          </div>
+          <h3>National Data Science Competition</h3>
+          <p class="hackathon-description">Developed a predictive model for student academic performance using machine learning algorithms. Achieved 92% accuracy in predicting at-risk students based on historical data.</p>
+          <div class="hackathon-tech">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
+          </div>
+          <div class="hackathon-achievements">
+            <div class="achievement">
+              <i class="fas fa-chart-line"></i>
+              <span>92% Accuracy</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-database"></i>
+              <span>Data Analysis</span>
             </div>
           </div>
         </div>
         
-        <!-- Hackathon 3 -->
-        <div class="timeline-item">
-          <div class="timeline-date">2022</div>
-          <div class="timeline-content">
-            <h3>Code for Social Good Hackathon</h3>
-            <p><strong>Second Place</strong></p>
-            <p>Created a web platform connecting volunteers with local community service opportunities. Featured geolocation matching, scheduling, and impact tracking.</p>
-            <div class="project-tech" style="margin-top: 1rem;">
-              <span>JavaScript</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-              <span>Mapbox API</span>
+        <div class="hackathon-card">
+          <div class="hackathon-header">
+            <span class="hackathon-badge second-place">Second Place</span>
+            <span class="hackathon-year">2022</span>
+          </div>
+          <h3>Code for Social Good Hackathon</h3>
+          <p class="hackathon-description">Created a web platform connecting volunteers with local community service opportunities. Featured geolocation matching, scheduling, and impact tracking.</p>
+          <div class="hackathon-tech">
+            <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Mapbox API</span>
+          </div>
+          <div class="hackathon-achievements">
+            <div class="achievement">
+              <i class="fas fa-handshake"></i>
+              <span>Social Impact</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Geolocation</span>
             </div>
           </div>
         </div>
         
-        <!-- Hackathon 4 -->
-        <div class="timeline-item">
-          <div class="timeline-date">2022</div>
-          <div class="timeline-content">
-            <h3>University Coding Marathon</h3>
-            <p><strong>Participant</strong></p>
-            <p>Competed in 24-hour coding challenge solving algorithmic problems and developing a minimum viable product for a given prompt.</p>
-            <div class="project-tech" style="margin-top: 1rem;">
-              <span>Java</span>
-              <span>Python</span>
-              <span>HTML/CSS</span>
-              <span>JavaScript</span>
+        <div class="hackathon-card">
+          <div class="hackathon-header">
+            <span class="hackathon-badge participant">Participant</span>
+            <span class="hackathon-year">2022</span>
+          </div>
+          <h3>University Coding Marathon</h3>
+          <p class="hackathon-description">Competed in 24-hour coding challenge solving algorithmic problems and developing a minimum viable product for a given prompt under time constraints.</p>
+          <div class="hackathon-tech">
+            <span>Java</span>
+            <span>Python</span>
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="hackathon-achievements">
+            <div class="achievement">
+              <i class="fas fa-clock"></i>
+              <span>24-Hour Challenge</span>
+            </div>
+            <div class="achievement">
+              <i class="fas fa-code"></i>
+              <span>Algorithmic Problems</span>
             </div>
           </div>
         </div>
@@ -108,111 +191,199 @@
   </section>
 
   <!-- Certifications Section -->
-  <section class="section" style="background-color: #f8fafc;">
+  <section class="section" style="background-color: var(--light-secondary);">
     <div class="container">
-      <h2 class="section-title">Certifications</h2>
-      <p class="section-subtitle">Professional certifications and completed courses</p>
+      <div class="section-header">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional certifications and completed courses</p>
+      </div>
       
       <div class="certifications-grid">
-        <!-- Certification 1 -->
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-issuer">Google</span>
-            <span class="cert-date">2023</span>
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="certification-info">
+              <span class="certification-issuer">Google</span>
+              <span class="certification-date">2023</span>
+            </div>
           </div>
-          <h3 class="cert-title">Data Engineering on Google Cloud</h3>
-          <p class="cert-desc">Comprehensive training on building data processing systems on Google Cloud Platform, including BigQuery, Dataflow, and Pub/Sub.</p>
-          <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+          <h3>Data Engineering on Google Cloud</h3>
+          <p class="certification-description">Comprehensive training on building data processing systems on Google Cloud Platform, including BigQuery, Dataflow, and Pub/Sub.</p>
+          <a href="#" class="certification-link">
+            <span>View Certificate</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
         
-        <!-- Certification 2 -->
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-issuer">IBM</span>
-            <span class="cert-date">2023</span>
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-icon">
+              <i class="fab fa-ibm"></i>
+            </div>
+            <div class="certification-info">
+              <span class="certification-issuer">IBM</span>
+              <span class="certification-date">2023</span>
+            </div>
           </div>
-          <h3 class="cert-title">Python for Data Science</h3>
-          <p class="cert-desc">Mastered data analysis, visualization, and machine learning using Python libraries like Pandas, NumPy, and Scikit-learn.</p>
-          <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+          <h3>Python for Data Science</h3>
+          <p class="certification-description">Mastered data analysis, visualization, and machine learning using Python libraries like Pandas, NumPy, and Scikit-learn.</p>
+          <a href="#" class="certification-link">
+            <span>View Certificate</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
         
-        <!-- Certification 3 -->
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-issuer">AWS</span>
-            <span class="cert-date">2022</span>
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-icon">
+              <i class="fab fa-aws"></i>
+            </div>
+            <div class="certification-info">
+              <span class="certification-issuer">AWS</span>
+              <span class="certification-date">2022</span>
+            </div>
           </div>
-          <h3 class="cert-title">AWS Cloud Practitioner</h3>
-          <p class="cert-desc">Fundamental understanding of AWS Cloud concepts, services, security, architecture, pricing, and support.</p>
-          <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+          <h3>AWS Cloud Practitioner</h3>
+          <p class="certification-description">Fundamental understanding of AWS Cloud concepts, services, security, architecture, pricing, and support.</p>
+          <a href="#" class="certification-link">
+            <span>View Certificate</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
         
-        <!-- Certification 4 -->
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-issuer">freeCodeCamp</span>
-            <span class="cert-date">2022</span>
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="certification-info">
+              <span class="certification-issuer">freeCodeCamp</span>
+              <span class="certification-date">2022</span>
+            </div>
           </div>
-          <h3 class="cert-title">Full Stack Web Development</h3>
-          <p class="cert-desc">Completed 300+ hours of coursework covering HTML, CSS, JavaScript, React, Node.js, databases, and authentication.</p>
-          <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+          <h3>Full Stack Web Development</h3>
+          <p class="certification-description">Completed 300+ hours of coursework covering HTML, CSS, JavaScript, React, Node.js, databases, and authentication.</p>
+          <a href="#" class="certification-link">
+            <span>View Certificate</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
         
-        <!-- Certification 5 -->
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-issuer">University of Venda</span>
-            <span class="cert-date">2022</span>
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="certification-info">
+              <span class="certification-issuer">University of Venda</span>
+              <span class="certification-date">2022</span>
+            </div>
           </div>
-          <h3 class="cert-title">Advanced Algorithms & Data Structures</h3>
-          <p class="cert-desc">University certification for excellence in advanced algorithm design, analysis, and implementation.</p>
-          <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+          <h3>Advanced Algorithms & Data Structures</h3>
+          <p class="certification-description">University certification for excellence in advanced algorithm design, analysis, and implementation.</p>
+          <a href="#" class="certification-link">
+            <span>View Certificate</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
         
-        <!-- Certification 6 -->
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-issuer">Coursera</span>
-            <span class="cert-date">2021</span>
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="certification-info">
+              <span class="certification-issuer">Coursera</span>
+              <span class="certification-date">2021</span>
+            </div>
           </div>
-          <h3 class="cert-title">Database Management Essentials</h3>
-          <p class="cert-desc">Comprehensive course covering database design, SQL, normalization, transactions, and database administration.</p>
-          <a href="#" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+          <h3>Database Management Essentials</h3>
+          <p class="certification-description">Comprehensive course covering database design, SQL, normalization, transactions, and database administration.</p>
+          <a href="#" class="certification-link">
+            <span>View Certificate</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Development Section -->
+  <!-- Learning Journey Section -->
   <section class="section">
     <div class="container">
-      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <div class="section-header">
         <h2 class="section-title">Continuous Learning</h2>
         <p class="section-subtitle">My commitment to ongoing skill development</p>
-        
-        <div style="margin-top: 2rem;">
-          <p style="margin-bottom: 1.5rem;">As a computer science student and aspiring software engineer, I believe in continuous learning. I regularly:</p>
-          
-          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
-            <div style="background-color: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-              <i class="fas fa-laptop-code" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-              <h4>Build Personal Projects</h4>
-              <p>Applying new technologies to practical problems</p>
-            </div>
-            
-            <div style="background-color: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-              <i class="fas fa-book-open" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-              <h4>Complete Online Courses</h4>
-              <p>Staying updated with industry trends and tools</p>
-            </div>
-            
-            <div style="background-color: white; padding: 1.5rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-              <i class="fas fa-users" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-              <h4>Participate in Hackathons</h4>
-              <p>Collaborating under pressure to solve challenges</p>
-            </div>
+      </div>
+      
+      <div class="learning-grid">
+        <div class="learning-card">
+          <div class="learning-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Build Personal Projects</h3>
+          <p>Applying new technologies to practical problems and real-world scenarios to gain hands-on experience.</p>
+          <div class="learning-projects">
+            <span>Web Applications</span>
+            <span>Data Pipelines</span>
+            <span>Mobile Apps</span>
           </div>
         </div>
+        
+        <div class="learning-card">
+          <div class="learning-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3>Complete Online Courses</h3>
+          <p>Staying updated with industry trends and tools through structured learning on various platforms.</p>
+          <div class="learning-platforms">
+            <span>Coursera</span>
+            <span>Udemy</span>
+            <span>Pluralsight</span>
+          </div>
+        </div>
+        
+        <div class="learning-card">
+          <div class="learning-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Participate in Hackathons</h3>
+          <p>Collaborating under pressure to solve challenges and innovate with teams from diverse backgrounds.</p>
+          <div class="learning-benefits">
+            <span>Teamwork</span>
+            <span>Problem Solving</span>
+            <span>Innovation</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="learning-cta">
+        <p>Always looking for new challenges and opportunities to learn. Currently focused on mastering cloud technologies and advanced data engineering concepts.</p>
+        <div class="current-learning">
+          <h4>Currently Learning:</h4>
+          <div class="current-tech">
+            <span>AWS Services</span>
+            <span>Docker & Kubernetes</span>
+            <span>Advanced Python</span>
+            <span>React Native</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Let's Build The Future Together</h2>
+        <p>Interested in collaborating on innovative projects or discussing technology solutions? Let's connect and explore opportunities.</p>
+        <a href="contact.html" class="btn btn-primary">
+          <span>Get In Touch</span>
+          <i class="fas fa-paper-plane"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -220,24 +391,67 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <div class="footer-logo">
-        <div class="logo-text" style="background: white; color: var(--primary-color);">FN</div>
+      <div class="footer-main">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <div class="logo-text">TM</div>
+            <div class="logo-name">Tshifhungu Matsheketsheke</div>
+          </div>
+          <p class="footer-description">
+            Computer Science student passionate about data engineering, software development, and creating impactful solutions.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <div class="link-columns">
+            <div class="link-column">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="projects.html" class="footer-link">Projects</a>
+            </div>
+            <div class="link-column">
+              <a href="experience.html" class="footer-link">Experience</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a href="https://github.com" target="_blank" class="footer-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> tshifhungujnr825@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> University of Venda</p>
+            <p><i class="fas fa-phone"></i> Available upon request</p>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="index.html" class="footer-link">Home</a>
-        <a href="about.html" class="footer-link">About</a>
-        <a href="projects.html" class="footer-link">Projects</a>
-        <a href="experience.html" class="footer-link">Experience</a>
-        <a href="contact.html" class="footer-link">Contact</a>
+      
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:tshifhungujnr825@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2025 Tshifhungu Matsheketsheke. All rights reserved.</p>
       </div>
-      <div class="footer-social">
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:fhatani@example.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p class="copyright">&copy; 2023 Fhatani Ndou. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="js/script.js"></script>
 </body>

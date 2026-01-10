@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -27,87 +28,157 @@
         <li><a href="experience.html" class="nav-link"><i class="fas fa-trophy"></i> Experience</a></li>
         <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- About Section -->
+  <!-- About Hero Section -->
+  <section class="section hero-section">
+    <div class="container">
+      <div class="about-hero">
+        <div class="about-hero-content">
+          <h1 class="hero-title">About <span class="highlight">Me</span></h1>
+          <p class="hero-description">Get to know my journey, skills, and passion for technology and innovation.</p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="100">0</span>
+              <span class="stat-label">Passionate %</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-hero-image">
+          <div class="profile-image">
+            <div class="profile-placeholder">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Content -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-subtitle">My journey in Computer Science</p>
-      
-      <div class="about-content">
-        <div class="about-text">
-          <h3>From Passion to Profession</h3>
-          <p>
-            I'm a dedicated Computer Science student at the <span class="highlight">
-            University of Venda</span> with a strong focus on <span class="highlight">
-            data engineering</span> and aspirations to become a full-fledged 
-            <span class="highlight">software engineer</span>. 
-            My journey in tech started with curiosity about how systems work, 
-            which evolved into building practical solutions for real-world problems.
-          </p>
-          <p>
-            My academic journey has equipped me with solid foundations in algorithms, 
-            data structures, and software development principles. Beyond coursework, I actively engage in hackathons, personal projects, and continuous learning to stay at the forefront of technology trends.
-          </p>
-          
-          <div class="personal-info">
-            <h3>Personal Information</h3>
-            <div class="info-item">
-              <span class="info-label">Name:</span>
-              <span class="info-value">Tshifhungu Matsheketsheke</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Education:</span>
-              <span class="info-value">BSc Computer Science, University of Venda</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Focus Areas:</span>
-              <span class="info-value">Data Engineering, Software Development, Full-Stack Web Development</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Location:</span>
-              <span class="info-value">South Africa</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Email:</span>
-              <span class="info-value">tshifhungujnr825@gmail.com</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">GitHub:</span>
-              <span class="info-value">github.com/tshifhungucodes</span>
-            </div>
+      <div class="about-content-grid">
+        <div class="about-main">
+          <div class="section-header">
+            <h2 class="section-title">My Journey</h2>
+            <p class="section-subtitle">From curiosity to creating solutions</p>
           </div>
           
-          <h3 style="margin-top: 2rem;">My Approach</h3>
-          <p>
-            I believe in <span class="highlight">practical learning</span> through building real projects. Whether it's developing a secure authentication system, creating a student grade book application, or participating in hackathons, I focus on understanding the underlying principles while delivering functional solutions.
-          </p>
-          <p>
-            My goal is to bridge the gap between data engineering and software development, creating systems that are not only data-efficient but also user-friendly and scalable.
-          </p>
+          <div class="about-story">
+            <h3>From Passion to Profession</h3>
+            <p>
+              I'm a dedicated Computer Science student at the <span class="highlight">University of Venda</span> with a strong focus on <span class="highlight">data engineering</span> and aspirations to become a full-fledged <span class="highlight">software engineer</span>. My journey in tech started with curiosity about how systems work, which evolved into building practical solutions for real-world problems.
+            </p>
+            <p>
+              My academic journey has equipped me with solid foundations in algorithms, data structures, and software development principles. Beyond coursework, I actively engage in hackathons, personal projects, and continuous learning to stay at the forefront of technology trends.
+            </p>
+            
+            <div class="personal-info-card">
+              <h3>Personal Information</h3>
+              <div class="info-grid">
+                <div class="info-item">
+                  <span class="info-label">Full Name</span>
+                  <span class="info-value">Tshifhungu Jonathan Matsheketsheke</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Education</span>
+                  <span class="info-value">BSc Computer Science, University of Venda</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Focus Areas</span>
+                  <span class="info-value">Data Engineering, Software Development, Full-Stack Web</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">South Africa</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Email</span>
+                  <span class="info-value">tshifhungujnr825@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">GitHub</span>
+                  <span class="info-value">github.com/tshifhungucodes</span>
+                </div>
+              </div>
+            </div>
+            
+            <h3>My Approach</h3>
+            <p>
+              I believe in <span class="highlight">practical learning</span> through building real projects. Whether it's developing a secure authentication system, creating a student grade book application, or participating in hackathons, I focus on understanding the underlying principles while delivering functional solutions.
+            </p>
+            <p>
+              My goal is to bridge the gap between data engineering and software development, creating systems that are not only data-efficient but also user-friendly and scalable.
+            </p>
+          </div>
         </div>
         
-        <div class="about-stats">
-          <div class="stat-card">
-            <div class="stat-number">10+</div>
-            <div class="stat-label">Projects Completed</div>
+        <div class="about-sidebar">
+          <div class="skills-card">
+            <h3>Technical Skills</h3>
+            <div class="skill-categories">
+              <div class="skill-category">
+                <h4><i class="fas fa-database"></i> Data Engineering</h4>
+                <div class="skill-items">
+                  <span class="skill-item">Python & Pandas</span>
+                  <span class="skill-item">SQL & Data Modeling</span>
+                  <span class="skill-item">Data Visualization</span>
+                  <span class="skill-item">ETL Processes</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4><i class="fas fa-code"></i> Software Development</h4>
+                <div class="skill-items">
+                  <span class="skill-item">Full-Stack Web</span>
+                  <span class="skill-item">JavaScript, CSS, HTML</span>
+                  <span class="skill-item">REST APIs & Auth</span>
+                  <span class="skill-item">Mobile Development</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4><i class="fas fa-tools"></i> Tools & Practices</h4>
+                <div class="skill-items">
+                  <span class="skill-item">Git & GitHub</span>
+                  <span class="skill-item">Agile Development</span>
+                  <span class="skill-item">Docker & CI/CD</span>
+                  <span class="skill-item">Cloud Platforms</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">3+</div>
-            <div class="stat-label">Hackathons Attended</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">5+</div>
-            <div class="stat-label">Certifications</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Passionate</div>
+          
+          <div class="education-card">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="education-item">
+              <h4>University of Venda</h4>
+              <p class="education-degree">BSc Computer Science</p>
+              <p class="education-period">2023 - Present</p>
+              <p class="education-desc">Specializing in Software Engineering, Data Structures, Algorithms, and Database Systems</p>
+            </div>
           </div>
         </div>
       </div>
@@ -115,79 +186,122 @@
   </section>
 
   <!-- Education Timeline -->
-  <section class="section" style="background-color: #f8fafc;">
+  <section class="section" style="background-color: var(--light-secondary);">
     <div class="container">
-      <h2 class="section-title">Education & Journey</h2>
-      <p class="section-subtitle">My academic and professional path</p>
+      <div class="section-header">
+        <h2 class="section-title">Education & Journey</h2>
+        <p class="section-subtitle">My academic and professional path</p>
+      </div>
       
       <div class="timeline">
-       <div class="timeline-item">
+        <div class="timeline-item">
           <div class="timeline-date">2026<br>Present</div>
           <div class="timeline-content">
-            <h3>First Learning Interns</h3>
-            <p><strong>@ ProdigyInfo Tech & HexSoftware</strong></p>
-            <p>Got acdepted to partake the  intern position at prodifyInfo and Hexsoftwares.<br></br> 
-              @Prodify got accepted for a FullStack Web Development where i will be learning continuasly and building fullStack Website<br></br></p>
-              @HexSoftware got accepted for position in Python Development where i will be learning and building real world solutions and systems using python and its frameworks
+            <h3>Learning Internships</h3>
+            <p class="timeline-subtitle">@ ProdigyInfo Tech & HexSoftware</p>
+            <p>Accepted for Full-Stack Web Development internship at ProdigyInfo Tech and Python Development at HexSoftware. Currently learning and building real-world solutions while gaining practical experience in professional environments.</p>
+            <div class="timeline-tech">
+              <span>Full-Stack</span>
+              <span>Python</span>
+              <span>Web Development</span>
+              <span>Real Projects</span>
             </div>
-       </div>
-      </div>
-         
-      <div class="timeline">
+          </div>
+        </div>
+        
         <div class="timeline-item">
           <div class="timeline-date">2025</div>
           <div class="timeline-content">
             <h3>First Major Website Projects</h3>
-            <p><strong>Real Business Websites Implementation</strong></p>
-            <p>Developed comprehensive smart and modern websites for local businesses
-              around my home town to help the business be more visible and professional,using  
-              HTML,CSS and JavaScript for backened and fast rendering, those websites include driving schools,
-              lodges and boutiques.
-            </p>
+            <p class="timeline-subtitle">Real Business Websites Implementation</p>
+            <p>Developed comprehensive modern websites for local businesses including driving schools, lodges, and boutiques. Implemented responsive designs with HTML, CSS, and JavaScript to help businesses increase visibility and professionalism.</p>
+            <div class="timeline-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
+            </div>
           </div>
         </div>
-      </div>  
-
-         <div class="timeline">
+        
         <div class="timeline-item">
           <div class="timeline-date">2025</div>
           <div class="timeline-content">
-            <h3>University of Venda </h3>
-            <p><strong>Bachelor of Science in Computer Science 3rd Year</strong></p>
-            <p>Specializing in Software Engineering, Data Structures, Algorithms,Artificial Intelligence Techniques , Database Systems and Distributed Systems.</p>
+            <h3>University of Venda</h3>
+            <p class="timeline-subtitle">Bachelor of Science in Computer Science - 3rd Year</p>
+            <p>Specializing in Software Engineering, Data Structures, Algorithms, Artificial Intelligence Techniques, Database Systems and Distributed Systems.</p>
+            <div class="timeline-tech">
+              <span>Algorithms</span>
+              <span>AI Techniques</span>
+              <span>Database Systems</span>
+              <span>Distributed Systems</span>
+            </div>
           </div>
         </div>
-
         
-
-         <div class="timeline-item">
+        <div class="timeline-item">
           <div class="timeline-date">2025</div>
           <div class="timeline-content">
             <h3>Hackathon Participation</h3>
-            <p><strong>Multiple Hackathons Attended</strong></p>
-            <p>Participated in several hackathons, developing solutions under time constraints and collaborating with teams.</p>
+            <p class="timeline-subtitle">Multiple Hackathons Attended</p>
+            <p>Participated in several hackathons, developing solutions under time constraints and collaborating with teams to solve real-world problems through technology.</p>
+            <div class="timeline-tech">
+              <span>Teamwork</span>
+              <span>Problem Solving</span>
+              <span>Time Management</span>
+              <span>Innovation</span>
+            </div>
           </div>
         </div>
-        
         
         <div class="timeline-item">
           <div class="timeline-date">2024</div>
           <div class="timeline-content">
             <h3>First Major Project</h3>
-            <p><strong>Student Grade Book System</strong></p>
-            <p>Developed a comprehensive system for managing student grades and academic performance using java,JAVAFX and MYSQL for Backened.</p>
+            <p class="timeline-subtitle">Student Grade Book System</p>
+            <p>Developed a comprehensive system for managing student grades and academic performance using Java, JavaFX, and MySQL with JDBC connectivity.</p>
+            <div class="timeline-tech">
+              <span>Java</span>
+              <span>JavaFX</span>
+              <span>MySQL</span>
+              <span>JDBC</span>
+            </div>
           </div>
         </div>
-        
-     
         
         <div class="timeline-item">
           <div class="timeline-date">2023</div>
           <div class="timeline-content">
-            <h3>First Year Varsity Exposure</h3>
-            <p><strong>Java Learning OOP</strong></p>
-            <p>Learned java and got exposed to the world of computer science where i realised how things work how data is stored and how it moves andflows from one point to the other<L/p>
+            <h3>First Year University</h3>
+            <p class="timeline-subtitle">Introduction to Programming & OOP</p>
+            <p>Learned Java and got exposed to the world of computer science, understanding how data is stored, moves, and flows from one point to another. Gained foundational knowledge in Object-Oriented Programming.</p>
+            <div class="timeline-tech">
+              <span>Java</span>
+              <span>OOP</span>
+              <span>Data Structures</span>
+              <span>Foundations</span>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Collaborate?</h2>
+        <p>Interested in working together or learning more about my projects? Let's connect and discuss how we can create something amazing.</p>
+        <div class="cta-buttons">
+          <a href="projects.html" class="btn btn-primary">
+            <span>View Projects</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -196,24 +310,67 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <div class="footer-logo">
-        <div class="logo-text" style="background: white; color: var(--primary-color);">TM</div>
+      <div class="footer-main">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <div class="logo-text">TM</div>
+            <div class="logo-name">Tshifhungu Matsheketsheke</div>
+          </div>
+          <p class="footer-description">
+            Computer Science student passionate about data engineering, software development, and creating impactful solutions.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <div class="link-columns">
+            <div class="link-column">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="projects.html" class="footer-link">Projects</a>
+            </div>
+            <div class="link-column">
+              <a href="experience.html" class="footer-link">Experience</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a href="https://github.com" target="_blank" class="footer-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> tshifhungujnr825@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> University of Venda</p>
+            <p><i class="fas fa-phone"></i> Available upon request</p>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="index.html" class="footer-link">Home</a>
-        <a href="about.html" class="footer-link">About</a>
-        <a href="projects.html" class="footer-link">Projects</a>
-        <a href="experience.html" class="footer-link">Experience</a>
-        <a href="contact.html" class="footer-link">Contact</a>
+      
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:tshifhungujnr825@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2025 Tshifhungu Matsheketsheke. All rights reserved.</p>
       </div>
-      <div class="footer-social">
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:fhatani@example.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p class="copyright">&copy; 2025 Tshifhungu Matsheketsheke. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="js/script.js"></script>
 </body>

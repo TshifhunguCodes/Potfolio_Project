@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Fhatani Ndou - Computer Science Student">
-  <title>Contact | Fhatani Ndou</title>
+  <meta name="description" content="Contact Tshifhungu Matsheketsheke - Computer Science Student">
+  <title>Contact | Tshifhungu Matsheketsheke</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -17,8 +18,8 @@
   <nav class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">
-        <div class="logo-text">FN</div>
-        <div class="logo-name">Fhatani Ndou</div>
+        <div class="logo-text">TM</div>
+        <div class="logo-name">Tshifhungu Matsheketsheke</div>
       </a>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
@@ -27,141 +28,249 @@
         <li><a href="experience.html" class="nav-link"><i class="fas fa-trophy"></i> Experience</a></li>
         <li><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- Contact Section -->
-  <section class="section">
+  <!-- Contact Hero -->
+  <section class="section hero-section">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Let's connect and discuss opportunities</p>
-      
-      <div class="contact-section">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">
+      <div class="contact-hero">
+        <div class="contact-hero-content">
+          <h1 class="hero-title">Let's <span class="highlight">Connect</span></h1>
+          <p class="hero-description">I'm always open to discussing new opportunities, collaborations, or just chatting about technology and innovation.</p>
+          <div class="contact-stats">
+            <div class="contact-stat">
               <i class="fas fa-envelope"></i>
+              <div>
+                <span class="contact-stat-number">Response Time</span>
+                <span class="contact-stat-label">Within 24 hours</span>
+              </div>
             </div>
-            <div class="contact-details">
-              <h4>Email</h4>
-              <p>fhatani@example.com</p>
-              <p>I typically respond within 24 hours</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <div class="contact-details">
-              <h4>GitHub</h4>
-              <p>github.com/fhatani</p>
-              <p>Check out my projects and contributions</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <div class="contact-details">
-              <h4>LinkedIn</h4>
-              <p>linkedin.com/in/fhatani</p>
-              <p>Connect with me professionally</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="contact-details">
-              <h4>Location</h4>
-              <p>University of Venda</p>
-              <p>Thohoyandou, Limpopo, South Africa</p>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-university"></i>
-            </div>
-            <div class="contact-details">
-              <h4>University</h4>
-              <p>University of Venda</p>
-              <p>Bachelor of Science in Computer Science</p>
+            <div class="contact-stat">
+              <i class="fas fa-clock"></i>
+              <div>
+                <span class="contact-stat-number">Availability</span>
+                <span class="contact-stat-label">For collaborations</span>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div class="contact-form">
-          <h3 style="margin-bottom: 1.5rem;">Send me a message</h3>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
+        <div class="contact-hero-image">
+          <div class="contact-illustration">
+            <i class="fas fa-paper-plane"></i>
+            <div class="contact-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            
-            <div class="form-group">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" id="subject" class="form-input" placeholder="What is this regarding?" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea id="message" class="form-textarea" placeholder="Your message here..." required></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-          </form>
-          
-          <div id="formMessage" style="margin-top: 1rem; text-align: center; display: none;">
-            <!-- Message will appear here after form submission -->
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Availability Section -->
-  <section class="section" style="background-color: #f8fafc;">
+  <!-- Contact Content -->
+  <section class="section">
     <div class="container">
-      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <h2 class="section-title">Open to Opportunities</h2>
-        <p class="section-subtitle" style="margin-bottom: 2rem;">I'm currently seeking internship and project opportunities</p>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
-          <div style="background-color: white; padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-            <i class="fas fa-code" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h4>Software Engineering Internships</h4>
-            <p>Full-stack, backend, or frontend development roles</p>
+      <div class="contact-content">
+        <div class="contact-info-section">
+          <div class="section-header" style="text-align: left;">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle" style="margin-left: 0;">Choose your preferred method to reach out</p>
           </div>
           
-          <div style="background-color: white; padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-            <i class="fas fa-database" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h4>Data Engineering Roles</h4>
-            <p>Building data pipelines and processing systems</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-method-content">
+                <h3>Email</h3>
+                <p>For inquiries, collaborations, or opportunities</p>
+                <a href="mailto:tshifhungujnr825@gmail.com" class="contact-link">
+                  tshifhungujnr825@gmail.com
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-method-content">
+                <h3>GitHub</h3>
+                <p>View my projects and contributions</p>
+                <a href="https://github.com" target="_blank" class="contact-link">
+                  github.com/tshifhungucodes
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-method-content">
+                <h3>LinkedIn</h3>
+                <p>Connect professionally</p>
+                <a href="https://linkedin.com" target="_blank" class="contact-link">
+                  linkedin.com/in/tshifhungu
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-method-content">
+                <h3>Location</h3>
+                <p>Based in South Africa</p>
+                <span class="contact-text">University of Venda</span>
+              </div>
+            </div>
           </div>
           
-          <div style="background-color: white; padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
-            <i class="fas fa-hands-helping" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-            <h4>Collaborative Projects</h4>
-            <p>Open source contributions or team projects</p>
+          <div class="contact-availability">
+            <h3>Current Availability</h3>
+            <div class="availability-status">
+              <span class="status-indicator available"></span>
+              <span class="status-text">Available for internships and collaborations</span>
+            </div>
+            <p class="availability-note">I'm currently seeking opportunities in software development and data engineering roles. Open to both remote and on-site positions.</p>
           </div>
         </div>
         
-        <div style="margin-top: 3rem;">
-          <p>Feel free to reach out if you have an opportunity that aligns with my skills and interests, or if you'd just like to connect and discuss technology!</p>
-          <a href="mailto:fhatani@example.com" class="btn btn-primary" style="margin-top: 1.5rem;">
-            <i class="fas fa-envelope"></i> Email Me Directly
+        <div class="contact-form-section">
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <p class="form-description">Fill out the form below and I'll get back to you as soon as possible.</p>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="What is this regarding?" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Your message here..." rows="5" required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  <label for="newsletter">Subscribe to occasional updates about my projects</label>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            
+            <div class="form-success" id="formSuccess" style="display: none;">
+              <i class="fas fa-check-circle"></i>
+              <h4>Message Sent Successfully!</h4>
+              <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background-color: var(--light-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Common questions about collaborations and opportunities</p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What types of projects are you interested in?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>I'm particularly interested in data engineering projects, full-stack web applications, and software solutions that solve real-world problems. I enjoy working on projects involving AI/ML, cloud technologies, and scalable systems.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Are you available for freelance work?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, I'm available for freelance projects. I have experience in web development, data analysis, and software solutions. The scope and timeline would depend on the specific requirements of the project.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What is your typical response time?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>I typically respond to emails within 24 hours. For urgent matters, you can expect a response even sooner. I make it a priority to stay on top of my communications.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you collaborate with other developers?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! I enjoy collaborating with other developers and designers. I believe in the power of teamwork and diverse perspectives in creating exceptional solutions. Feel free to reach out if you have a project in mind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start a Conversation?</h2>
+        <p>Whether you have a project in mind, want to collaborate, or just want to say hello, I'd love to hear from you.</p>
+        <div class="cta-buttons">
+          <a href="mailto:tshifhungujnr825@gmail.com" class="btn btn-primary">
+            <span>Email Me</span>
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="projects.html" class="btn btn-secondary">
+            <span>View Projects</span>
+            <i class="fas fa-code"></i>
           </a>
         </div>
       </div>
@@ -171,24 +280,67 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <div class="footer-logo">
-        <div class="logo-text" style="background: white; color: var(--primary-color);">FN</div>
+      <div class="footer-main">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <div class="logo-text">TM</div>
+            <div class="logo-name">Tshifhungu Matsheketsheke</div>
+          </div>
+          <p class="footer-description">
+            Computer Science student passionate about data engineering, software development, and creating impactful solutions.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <div class="link-columns">
+            <div class="link-column">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="projects.html" class="footer-link">Projects</a>
+            </div>
+            <div class="link-column">
+              <a href="experience.html" class="footer-link">Experience</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a href="https://github.com" target="_blank" class="footer-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> tshifhungujnr825@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> University of Venda</p>
+            <p><i class="fas fa-phone"></i> Available upon request</p>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="index.html" class="footer-link">Home</a>
-        <a href="about.html" class="footer-link">About</a>
-        <a href="projects.html" class="footer-link">Projects</a>
-        <a href="experience.html" class="footer-link">Experience</a>
-        <a href="contact.html" class="footer-link">Contact</a>
+      
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:tshifhungujnr825@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2025 Tshifhungu Matsheketsheke. All rights reserved.</p>
       </div>
-      <div class="footer-social">
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:fhatani@example.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p class="copyright">&copy; 2023 Fhatani Ndou. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="js/script.js"></script>
   <script>
@@ -196,27 +348,46 @@
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Get form values
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const subject = document.getElementById('subject').value;
-      const message = document.getElementById('message').value;
+      // Show success message
+      document.getElementById('formSuccess').style.display = 'block';
+      document.getElementById('contactForm').style.display = 'none';
       
-      // In a real application, you would send this data to a server
-      // For this example, we'll just show a success message
-      const formMessage = document.getElementById('formMessage');
-      formMessage.innerHTML = `
-        <div style="background-color: #d1fae5; color: #065f46; padding: 1rem; border-radius: var(--border-radius);">
-          <i class="fas fa-check-circle"></i> Thank you, ${name}! Your message has been sent. I'll get back to you at ${email} soon.
-        </div>
-      `;
-      formMessage.style.display = 'block';
+      // Scroll to success message
+      document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth' });
       
-      // Reset form
-      document.getElementById('contactForm').reset();
-      
-      // Scroll to message
-      formMessage.scrollIntoView({ behavior: 'smooth' });
+      // Reset form after 5 seconds
+      setTimeout(function() {
+        document.getElementById('contactForm').reset();
+        document.getElementById('formSuccess').style.display = 'none';
+        document.getElementById('contactForm').style.display = 'block';
+      }, 5000);
+    });
+    
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', function() {
+        const answer = this.nextElementSibling;
+        const icon = this.querySelector('i');
+        
+        // Toggle answer visibility
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        
+        // Toggle icon
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+        
+        // Close other FAQ items
+        document.querySelectorAll('.faq-question').forEach(otherQuestion => {
+          if (otherQuestion !== this) {
+            const otherAnswer = otherQuestion.nextElementSibling;
+            const otherIcon = otherQuestion.querySelector('i');
+            
+            otherAnswer.style.display = 'none';
+            otherIcon.classList.remove('fa-chevron-up');
+            otherIcon.classList.add('fa-chevron-down');
+          }
+        });
+      });
     });
   </script>
 </body>
