@@ -3118,3 +3118,99 @@ p {
     font-size: 1.75rem;
   }
 }
+
+/* hamburger menu styles start here fixes*/
+/* Add these styles to your existing CSS for mobile navigation */
+
+@media (max-width: 768px) {
+  /* Navigation Container - Mobile */
+  .nav-container {
+    padding: 0 16px;
+    height: 64px; /* Slightly reduced height for mobile */
+  }
+  
+  /* Logo - Mobile */
+  .logo-name {
+    font-size: 1rem; /* Reduced font size for mobile */
+    max-width: 150px; /* Limit width */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* For very small screens, show initials only */
+  @media (max-width: 400px) {
+    .logo-name {
+      display: none; /* Hide full name on very small screens */
+    }
+    
+    .logo-name.short {
+      display: block;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Alternative: Show shorter version of name */
+  .logo-name.full {
+    display: none;
+  }
+  
+  .logo-name.short {
+    display: block;
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile Navigation Menu */
+  .nav-menu {
+    position: fixed;
+    top: 64px;
+    right: -100%;
+    flex-direction: column;
+    background-color: var(--light-color);
+    width: 100%;
+    max-width: 300px;
+    height: calc(100vh - 64px);
+    padding: 1.5rem;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow-lg);
+    gap: 0;
+    z-index: 999;
+    overflow-y: auto;
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .nav-link {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--gray-light);
+    width: 100%;
+    border-radius: 0;
+    justify-content: flex-start;
+  }
+  
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-link.active::before {
+    left: -1.5rem;
+    right: auto;
+    width: 4px;
+    height: 100%;
+    bottom: 0;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* Close background when menu is open */
+  .nav-menu.active ~ .hamburger {
+    background-color: rgba(37, 99, 235, 0.1);
+  }
+}

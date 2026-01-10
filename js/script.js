@@ -258,3 +258,65 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Updated mobile menu JavaScript in script.js
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Menu Toggle - Improved
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  // Function to toggle menu
+  function toggleMenu() {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    
+    // Toggle body scroll
+    if (navMenu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.height = '100vh';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.height = '';
+    }
+  }
+  
+  hamburger.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent event bubbling
+    toggleMenu();
+  });
+  
+  // Close mobile menu when clicking on links
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      if (window.innerWidth <= 768) {
+        toggleMenu();
+      }
+    });
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    if (navMenu.classList.contains('active') && 
+        !navMenu.contains(event.target) && 
+        !hamburger.contains(event.target)) {
+      toggleMenu();
+    }
+  });
+  
+  // Close menu on escape key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && navMenu.classList.contains('active')) {
+      toggleMenu();
+    }
+  });
+  
+  // Close menu on window resize if it's open
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+      toggleMenu();
+    }
+  });
+  
+  // Rest of your existing JavaScript code...
+});
